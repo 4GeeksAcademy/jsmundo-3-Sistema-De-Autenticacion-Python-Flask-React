@@ -1,0 +1,134 @@
+/* Fondo general de la página */
+body {
+    background-color: #f3f4f6; /* Fondo gris claro */
+    color: #333; /* Texto oscuro */
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+.registro-container {
+    background-color: #ffffff; /* Fondo blanco puro */
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    text-align: center; /* Texto centrado */
+}
+
+/* Título del formulario */
+.registro-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #333;
+}
+
+/* Inputs del formulario */
+.registro-form .form-control {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Borde gris claro */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    color: #333; /* Texto oscuro */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Input al enfocarse */
+.registro-form .form-control:focus {
+    border-color: #3b82f6; /* Azul al enfocar */
+    background-color: #ffffff; /* Fondo blanco al enfocar */
+    outline: none;
+}
+
+/* Botón de registro */
+.registro-form button {
+    background-color: #3b82f6; /* Azul elegante */
+    color: white;
+    padding: 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover en el botón */
+.registro-form button:hover {
+    background-color: #2563eb; /* Azul más oscuro */
+}
+
+/* Texto adicional */
+.registro-container p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.registro-container a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.registro-container a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 576px) {
+    .registro-container {
+        padding: 20px;
+        max-width: 100%;
+        box-shadow: none; /* Elimina la sombra para pantallas muy pequeñas */
+        border-radius: 10px;
+    }
+
+    .registro-container h2 {
+        font-size: 1.5rem; /* Reduce el tamaño del título */
+    }
+
+    .registro-form .form-control {
+        padding: 12px;
+        font-size: 0.9rem; /* Tamaño de texto más pequeño */
+    }
+
+    .registro-form button {
+        padding: 12px;
+        font-size: 0.9rem; /* Tamaño del botón más pequeño */
+    }
+}
+
+/* Tabletas */
+@media (max-width: 768px) {
+    .registro-container {
+        padding: 25px;
+        max-width: 90%; /* Más ancho en tabletas */
+    }
+
+    .registro-container h2 {
+        font-size: 1.6rem; /* Ajusta el tamaño del título */
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1200px) {
+    .registro-container {
+        max-width: 450px; /* Más ancho en pantallas grandes */
+    }
+
+    .registro-container h2 {
+        font-size: 2rem; /* Título más grande */
+    }
+}
+
+
+
